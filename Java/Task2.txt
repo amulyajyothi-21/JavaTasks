@@ -1,0 +1,36 @@
+public class Calculator {
+
+	public static void main(String[] args) {
+		int num1=Integer.valueOf(args[0]);
+		int num2=Integer.valueOf(args[1]);
+		Calculator cal=new Calculator();
+		cal.add(num1, num2);
+		cal.subtract(num1, num2);
+		cal.multiply(num1, num2);
+		cal.divide(num1, num2);
+	}
+	public int add(int num1,int num2)
+    {
+		int result=num1+num2;
+		System.out.println("Addition of two numbers is "+result);
+    	return result;
+    }
+	public int subtract(int num1,int num2)
+	{
+		int result=num1-num2;
+		System.out.println("subtraction of two numbers is "+result);
+		return result;
+	}
+    public int multiply(int num1,int num2)
+    {
+    	int result=num1*num2;
+    	System.out.println("Multiplication of two numbers is "+result);
+    	return result;
+    }
+    public double divide(int num1,int num2)
+    {
+    	double result=num1/num2;
+    	System.out.println("Division of two numbers is "+result);
+    	return result;
+    }
+}

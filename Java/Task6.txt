@@ -1,0 +1,39 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class SumFunction
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the rows");
+		int rows=sc.nextInt();
+		System.out.println("Enter the columns");
+		int columns =sc.nextInt();
+		int [][]array=new int[rows][columns];
+		System.out.println("Enter the elements of array");
+	
+		for(int x=0;x<rows;x++)
+		{
+			for(int y=0;y<columns;y++)
+			{
+				array[x][y]=sc.nextInt();
+			}
+		}
+		int sum=addarray(0,array);
+		System.out.println("sum of elements in array is "+sum);
+	}
+	public static int addarray(int sum,int[][]array)
+	{
+		
+		for(int x=0;x<array.length;x++)
+		{
+			for(int y=0;y<array[x].length;y++)
+			{
+				sum+=array[x][y];
+			}
+		}
+		return sum;
+	}
+
+}

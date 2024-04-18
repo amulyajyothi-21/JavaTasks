@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ReverseArray {
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int[] arr=new int[5];
+		System.out.println("Enter the array");
+        for(int i=0;i<arr.length;i++)
+        	arr[i]=sc.nextInt();
+        
+        System.out.println("The Elements are");
+        for(int a:arr)
+        	System.out.println(a);
+        
+        System.out.println("The elements in reverse order are");
+        for(int x=arr.length-1;x>=0;x--)
+        	System.out.println(arr[x]);
+	}
+
+}

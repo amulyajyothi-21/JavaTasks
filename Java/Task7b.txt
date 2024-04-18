@@ -1,0 +1,35 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class LinearSearch {
+
+	public static void main(String[] args) {
+		int a[]=new int[10];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the elements");
+		for(int i=0;i<a.length;i++)
+			a[i]=sc.nextInt();
+        System.out.println("Enter the element you want to search");
+        int element=sc.nextInt();
+        int index=searchElement(a,element);
+        if(index!=-1)
+        	System.out.println("Element foun at index "+index);
+        else
+        	System.out.println(index);
+	}
+   
+	public static int searchElement(int[]a,int searchElement)
+	{
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==searchElement)
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
+
+}
+ 
